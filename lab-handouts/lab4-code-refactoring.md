@@ -1,21 +1,12 @@
 # Code Refactoring with GitHub Copilot
 
-## Introduction
+GitHub code refactoring refers to the process of restructuring and improving the quality of code in a GitHub repository without changing its external behaviour. Code refactoring aims to enhance readability, maintainability, and performance while reducing technical debt and potential bugs. In this lab, you will participate in a learning or practice activity where your main goal will be to use GitHub Copilot for code refactoring using the C# programming language.
 
-GitHub code refactoring refers to the process of restructuring and improving the quality of code in a GitHub repository without changing its external behaviour. Code refactoring aims to enhance readability, maintainability, and performance while reducing technical debt and potential bugs.
+## Task 1
 
-In this exercise, you will participate in a learning or practice activity where your main goal will be to use GitHub Copilot for code refactoring using the C# programming language. You will also be generating unit test functions using GitHub Copilot Chat.
+1. Look at the example of poorly written C# code in the `poorly_written.cs` file in the `lab-files` directory and analyze it. Take note of how could this code could be improved.
 
-### Task 1
-
-1. Install the C# extension in VS Code: 
- - Click on the **Extensions** icon in the activity bar present on the left side of the Visual Studio Code window
- - Search for the **C#** extension in the _Search Extensions in Marketplace_ search box
- - Select **C#** from the list of results that show up and **Install**
-
-2. Look at the example of poorly written C# code in the `poorly_written.cs` file in the `lab-files` directory and analyze it. How could this code be improved?
-
-Here are a few code-related issues: 
+**Here are a few code-related issues:**
 - The code begins with the inclusion of the System namespace for essential input and output operations.
 - It defines a constant MAX with a value of 100 to represent the maximum number of elements allowed.
 - The Sum method calculates the sum of elements in an array.
@@ -27,7 +18,21 @@ Here are a few code-related issues:
     - Outputs the sum to the console.
     - There's no need to manually free memory in C# because it manages memory automatically.
 
-### Task 2
+2. Select all of the code in the `poorly_written.cs` file and open GitHub Copilot Chat. Prompt GitHub Copilot Chat to identify any code-related issues without suggesting improvements. 
+
+```
+Identify the code-related issues in the selected code
+```
+
+3. GitHub Copilot may provide a list similar to the following: 
+  - Lack of Error Handling
+  - Inefficient Array Size Declaration
+  - Magic Number Usage
+  - String Concatenation
+
+4. Compare the identified problems from Step 1 to the identified problems from Step 2, noting where GitHub Copilot had similar or different observations
+
+## Task 2
 
 1. Open the GitHub Copilot Chat window by clicking the **Chat** extension icon
 
@@ -84,6 +89,8 @@ class Program
 }
 ```
 
+**Note: The code provided by GitHub Copilot may not be perfect. You may need to make some adjustments to the code to ensure it works correctly. The code may also look differently than the above example**
+
 4. Analyze the changes made to the code by GitHub Copilot Chat. What has changed?
 
 - Here, GitHub Copilot removed the n parameter from the Sum method since it's not needed. Instead, the Copilot used a for-each loop to iterate over the array. As a result, the code is easier to comprehend and more concise.
@@ -100,11 +107,10 @@ class Program
 
 5. Insert the code into a new file named `well_written.cs` into the `lab-files` directory
 
-### Task 3
+## Task 3
 
 1. Open the file named `codechat.cs`
 
-***Note:** If you see a recommendation to install the C# extension, click on **Install**
 
 2. Ask Copilot to use if-else statements instead of the current switch statement. Identify the second of code where the switch is present, and select it
 
@@ -116,37 +122,8 @@ class Program
 
 6. Save the changes made to `codechat.cs`
 
-### Task 4 
+## Task 4 
 
-1. Push your code to the repository using either method provided below:
+1. Save your files ensuring that they are in the `lab-files` directory
 
-    #### Using Git Flow
-
-    1. At the top of your VS Code window select the **Terminal** tab and click **New Terminal**. This will open a terminal window directly in your VS Code.
-    2. Run the command below to add the `codechat.cs` file to the GitHub repo
-
-    ```
-    git add codechat.cs
-    ```
-
-    3. Commit the changes to the repo
-
-    ```
-    git commit -m "My refactoring copilot commit."
-    ```
-
-    4. Push the code to the repo
-
-    ```
-    git push
-    ```
-
-    5. Wait approx. 1 minute and refresh your GitHub repository to ensure that the changes are reflected in your repository
-
-    #### Using the VS Code Interface
-
-    1. Click the VS Code **Source Control** tab on the left hand of your VS Code screen or press `Ctrl + Shift + G` 
-    2. Stage your changes by clicking the small plus icon in the righthand corner of the panel
-    3. Enter a commit message and select the **Commit** button
-    4. Once changes are staged, click the elipses in the far right corner, choose **Push** and enter your password
-    5. Wait approx. 1 minute and refresh your GitHub repository to ensure that the changes are reflected in your repository
+2. Move onto the [next lab task](lab-handouts/lab5-unit-testing.md)
