@@ -1,10 +1,20 @@
-# Welcome to GitHub Copilot Fundamentals 100!
-A repository for all things GitHub Copilot Training - Fundamentals 100!
+<p align="center">
+  <img width="240" height=126" src="assets/cei.png"/>
+</p>
+       
+# GitHub Copilot Fundamentals 100
+This repository contains the lab guides and resources for the GitHub Copilot Fundamentals 100
 
-The GitHub Copilot Fundamentals 100 Workshop is designed for developers who want to gain foundational knowledge and practical skills in using GitHub Copilot. 
+## Objective
+This lab is designed to help you get started with GitHub Copilot, an AI-powered code completion tool developed by GitHub and OpenAI. You will learn how to install and set up GitHub Copilot, integrate it with popular integrated development environments (IDEs) and text editors, and use it for code completion and code generation.
 
-## Syllabus
+## Prerequisites
+- Basic understanding programming/coding concepts
+- Familiarity with Python programming language
+- Familiarity with Java programming language
+- GitHub Copilot (and GitHub Copilot Chat) extension installed in your preferred IDE (e.g., Visual Studio Code, IntelliJ IDEA etc.)
 
+## Agenda
 ### Introduction to GitHub Copilot
 - **What is GitHub Copilot:** An introduction to GitHub Copilot, an AI-powered code completion tool developed by GitHub and OpenAI 
 - **Overview of features and capabilities:** Includes an overview of Copilot’s ability to generate code suggestions, assist in code completion and improve developer productivity 
@@ -26,18 +36,35 @@ The GitHub Copilot Fundamentals 100 Workshop is designed for developers who want
 - **Ensuring code quality:** Strategies for maintaining code quality while leveraging GitHub Copilot’s suggestions 
 - **Overview of prompt engineering:** Introduction to prompt engineering techniques to guide GitHub Copilot’s suggestions and improve the relevance / accuracy of generated code 
 
-## This course contains 6 different lab sections all on the basics of how to use GitHub Copilot, lab handouts can be found in the `lab-handouts` directory.
+## Instructions
+Labs should be completed consecutively starting with Lab 1 and ending with Lab 6. Any files required for completing your labs will reside within the `lab-files` directory.
 
-### Lab Topics Are As Follows: 
 
-**Lab 01 -->** Experimenting with JavaScript AI Code Suggestions
+## Labs
+1. [Setup and Configuration](labs/lab1-setup-and-configuration.md)
+This lab is designed to help you get your development environment set up and ready to go for the rest of the course. You will install the necessary tools and software, and verify that everything is working as expected. If you have the tools and software already installed, you can skip this lab and proceed to the next lab.
+2. [Experimenting with GitHub Copilot Code Suggestions](lab-handouts/lab2-copilot-code-suggestions.md)
+In this exercise, you will have the opportunity to experiment with in-file code suggestions, multiple suggestions, and comprehensive code suggestions with the assistance of GitHub Copilot and GitHub Copilot Chat.
+3. [Generating ARM, Terraform and Powershell Code with GitHub Copilot](lab-handouts/lab3-scripting.md)
+This lab will allow you to generate ARM and Terraform code for deploying a storage account to Azure using GitHub Copilot Chat.
+4. [Performing Code Refactoring with GitHub Copilot](lab-handouts/lab4-code-refactoring.md)
+In this lab, you will participate in a learning or practice activity where your main goal will be to use GitHub Copilot for code refactoring using the C# programming language.
+5. [Creating Unit Tests with GitHub Copilot](lab-handouts/lab5-unit-testing.md)
+GitHub Copilot can be used to generate unit test functions for a variety of programming languages. This lab will guide you through the process of creating a calculator program and generating unit tests for each function using GitHub Copilot Chat.
+6. [Generating Documentation with GitHub Copilot](lab-handouts/lab6-generating-documentation.md)
+GitHub Copilot can help streamline the process of generating documentation for your software projects. It assists by auto-generating code comments, creating Markdown documentation, providing templates for common sections, ensuring grammar and style consistency, and cross-referencing code and documentation. This tool can save time and improve the quality of your project's documentation, making it more accessible and user-friendly.
 
-**Lab 02 -->** Leverging Multiple Suggestions with GitHub Copilot
+## Additional Resources
+- [GitHub Copilot Documentation](https://copilot.github.com/)
+- [GitHub Copilot - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 
-**Lab 03 -->** Generating ARM and Terraform code with GitHub Copilot Chat
+## Troubleshooting 
+If you encounter any issues with the labs, please send us an email at [githubtraining@ceiamerica.com](mailto:githubtraining@ceiamerica.com) or reach out the trainer. We will get back to you as soon as possible.
 
-**Lab 04 -->** Code Refactoring with GitHub Copilot
+## License
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details
 
-**Lab 05 -->** Creating Unit Test Functions with GitHub Copilot Chat
+## About CEI
+This repository is maintained by Computer Enterprises, Inc. (CEI). CEI is a leading provider of technology solutions and services to a broad range of clients. CEI’s offerings include cloud, digital, and application services, and infrastructure solutions. CEI is a GitHub Advanced Services Partner and has been recognized as a GitHub Copilot Partner. For more information, visit [www.ceiamerica.com](https://www.ceiamerica.com/)
 
-**Lab 06 -->** Generating Documentation With Inline GitHub Copilot
+### Happy Learning! 🚀
